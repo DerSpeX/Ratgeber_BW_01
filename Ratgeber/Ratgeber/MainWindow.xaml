@@ -1,0 +1,56 @@
+﻿<Window x:Class="Ratgeber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ratgeber"
+        mc:Ignorable="d"
+        Title="Hauptbildschirm" Height="450" Width="800"
+        ShowInTaskbar="True" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <ImageBrush ImageSource="postkarte-hintergrund.jpg"/>
+                </Border.Background>
+            </Border>
+
+
+                <Button x:Name="Close" Content="X" Width="30" Height="30" Background="Transparent" Foreground="Black" BorderThickness="2" BorderBrush="WhiteSmoke" Margin="760,10,10,185" Click="Close_Click"/>
+
+
+            <StackPanel>
+                <TextBlock Text="Finde deinen Weg..."
+                           Width="472"
+                           Height="80"
+                           HorizontalAlignment="Center"
+                           Background="Transparent"
+                           Foreground="GhostWhite"
+                           FontSize="50"
+                           FontWeight="Bold"
+                           FontStyle="Italic">
+
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="4" ShadowDepth="4" Direction="330" Color="Black" Opacity="1"/>
+                    </TextBlock.Effect>                      
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2">
+                <ListBox Background="Transparent" Width="325" Height="225" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="Black">
+
+                </ListBox>
+            </StackPanel>
+            
+            
+            
+        </Grid>
+    </Grid>
+</Window>

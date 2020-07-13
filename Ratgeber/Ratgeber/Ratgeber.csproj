@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="postkarte-hintergrund.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="postkarte-hintergrund.jpg" />
+  </ItemGroup>
+
+</Project>
